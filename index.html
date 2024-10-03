@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,63 +13,74 @@
             line-height: 1.6;
             color: #333;
         }
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
-            background-color: #e6f2ff; /* Soft blue hue */
+            background-color: #edf2ff;
             padding: 20px 0;
         }
+
         .header-content {
             display: flex;
             align-items: center;
             gap: 20px;
         }
+
         .logo {
-            width: 100px;
-            height: 100px;
-            background-color: #ddd; /* Placeholder color */
+            width: 125px;
+            height: 125px;
         }
+
         .title-slogan {
             flex-grow: 1;
         }
+
         .name {
-            font-size: 2.5em;
-            color: #1a4a8d; /* Deep blue, same as footer */
+            font-size: 4.5em;
+            color: #1f3e87;
             margin: 0;
         }
+
         .slogan {
             font-size: 1em;
-            color: #666;
+            color: #555;
             margin: 5px 0 0 0;
         }
+
         .logo-placeholder {
             width: 150px;
             height: 50px;
             background-color: #fff;
             margin: 0 auto;
         }
+
         .carousel {
             position: relative;
             width: 100%;
             margin: 40px auto;
             overflow: hidden;
         }
+
         .carousel-container {
             display: flex;
             transition: transform 0.3s ease-in-out;
         }
+
         .carousel-item {
             flex: 0 0 calc(33.333% - 20px);
             margin: 0 10px;
             background-color: #f9f9f9;
             border-radius: 8px;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .user-image {
             width: 80px;
             height: 80px;
@@ -77,15 +89,18 @@
             margin: 0 auto 15px;
             display: block;
         }
+
         .user-comment {
             font-style: italic;
             margin-bottom: 10px;
             font-size: 14px;
         }
+
         .user-name {
             font-weight: bold;
             font-size: 16px;
         }
+
         .carousel-control {
             position: absolute;
             top: 50%;
@@ -96,19 +111,39 @@
             cursor: pointer;
             z-index: 10;
         }
+
         .carousel-control.prev {
             left: 10px;
         }
+
         .carousel-control.next {
             right: 10px;
         }
+
         footer {
-            background-color: #1a4a8d; /* Deeper blue */
+            background-color: #2b395a;
             color: #fff;
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
         }
+
+        .slogan-section {
+            background-color: #fff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .slogan {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;           
+            font-family: 'Arial Black';            
+            color: #2b395a;            
+            margin-top: 10px;           
+        }
+
         @media (max-width: 768px) {
             .carousel-item {
                 flex: 0 0 calc(100% - 20px);
@@ -116,6 +151,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -124,41 +160,99 @@
 
             <div class="header-content">
 
-                <div class="logo">                   
+                <div class="logo">
                     <img src="imagens/logo.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
 
                 <div class="title-slogan">
-                    <h1 class="name">Nome</h1>
-                    <p class="slogan">Slogan</p>
+                    <h1 class="name">Worker AI</h1>
                 </div>
 
             </div>
+
+            <p class="slogan">Conhecimento é Segurança, Segurança é Sucesso</p>
 
         </div>
 
     </header>
 
     <main class="container">
+
         <h1>Bem vindo</h1>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-        
-        <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <p>Transformamos a segurança industrial através da inteligência artificial. Nossa plataforma inovadora oferece
+            informações cruciais em tempo real sobre o maquinário da sua empresa, permitindo operações mais seguras e
+            eficientes.</p>
 
-        <h2>Missão</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-        
-        <p>Maecenas venenatis, magna vel bibendum tincidunt, augue lorem eleifend nunc, ac tincidunt nulla odio nec augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur faucibus aliquam felis, at venenatis elit faucibus id. Sed vitae dui vel nisl varius tincidunt. Sed in metus in nunc faucibus ultricies.</p>
-        
-        <h2>Sobre</h2>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-        
-        <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <p>Imagine um ambiente de trabalho onde cada funcionário tem acesso instantâneo a todas as informações
+            necessárias para operar equipamentos complexos com confiança e segurança. Um lugar onde acidentes são
+            prevenidos antes de acontecerem, e a eficiência operacional atinge novos patamares.</p>
 
-        <h3>Firulas e Efeitos HTML</h3>
-        <h3>Fotinhas</h3>
-       
-        <h2>Clientes</h2>
+        <p>Não é apenas uma visão do futuro - é o que oferecemos hoje. Explore nosso site para descobrir como estamos
+            revolucionando a segurança industrial e impulsionando a produtividade em diversos setores.</p>
+
+        <p>Juntos, vamos construir um futuro mais seguro e eficiente para a indústria.</p>
+
+
+        <br>
+
+        <h1>Nossa Missão</h1>
+
+        <p>Na Worker AI, nossa missão é revolucionar a segurança e a eficiência no ambiente industrial através da
+            aplicação inteligente da tecnologia.</p>
+
+        <p>Acreditamos que cada trabalhador merece um ambiente de trabalho seguro, e que cada empresa deve ter as
+            ferramentas necessárias para operar no auge da eficiência. É por isso que desenvolvemos uma solução de IA
+            que não apenas fornece informações críticas sobre maquinário industrial, mas também as torna acessíveis e
+            acionáveis no momento certo.</p>
+
+        <h3>Estamos comprometidos em:</h3>
+        <ol>
+            <li>Promover uma cultura de segurança proativa em todos os setores industriais.</li>
+            <li>Impulsionar a inovação tecnológica para antecipar e prevenir riscos.</li>
+            <li>Capacitar trabalhadores com conhecimento e ferramentas para tomar decisões informadas.</li>
+            <li>Ajudar as empresas a alcançar novos níveis de eficiência operacional.</li>
+            <li>Contribuir para um futuro onde acidentes de trabalho sejam coisa do passado.</li>
+        </ol>
+
+        <p>Nossa visão é um mundo onde a tecnologia e a segurança trabalham em harmonia, permitindo que as indústrias
+            prosperem enquanto protegem seu ativo mais valioso: as pessoas.</p>
+
+        <p><strong>Junte-se a nós nesta jornada para transformar o local de trabalho industrial em um ambiente mais
+                seguro, mais inteligente e mais produtivo.</strong></p>
+
+
+        <br>
+
+
+        <h1>Sobre a Worker AI</h1>
+
+        <p>A Worker AI é uma startup inovadora no campo da segurança industrial e eficiência operacional, fundada há
+            apenas 2 meses por um grupo de visionários apaixonados por tecnologia e segurança no trabalho.</p>
+
+        <p>Nossa jornada começou quando nossos fundadores identificaram uma lacuna crítica no mercado: a necessidade de
+            uma solução inteligente e em tempo real para gerenciar informações sobre maquinário industrial.</p>
+
+        <p>Em apenas 60 dias, crescemos de uma ideia para uma equipe dinâmica de 2 profissionais dedicados, incluindo
+            engenheiros de software, especialistas em IA, profissionais de segurança industrial e especialistas em
+            experiência do usuário.</p>
+
+        <h3>O que nos diferencia:</h3>
+        <ol>
+            <li><strong>Inovação Rápida:</strong> Nossa estrutura enxuta nos permite adaptar e evoluir rapidamente com
+                base no feedback do cliente.</li>
+            <li><strong>Foco no Cliente:</strong> Trabalhamos em estreita colaboração com nossos clientes beta para
+                garantir que nossa solução atenda às necessidades reais da indústria.</li>
+            <li><strong>Compromisso com a Excelência:</strong> Embora sejamos jovens, estamos comprometidos em fornecer
+                um produto de classe mundial.</li>
+        </ol>
+
+        <p>Estamos apenas no início de nossa jornada, mas nossa visão é clara: transformar a segurança industrial
+            através da tecnologia inteligente.</p>
+
+        <p><strong>Junte-se a nós enquanto revolucionamos a forma como as indústrias abordam a segurança e a eficiência
+                operacional.</strong></p>
+
+        <h1>Clientes</h1>
 
         <div class="carousel">
 
@@ -210,7 +304,7 @@
 
         <footer>
             <div class="container">
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <p>&copy; 2024 Worker AI. Todos os Direitos Reservados.</p>
             </div>
         </footer>
 
