@@ -4,17 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Empresa Github</title>
+    <title>Worker AI</title>
     <style>
+        @font-face {
+            font-family: 'Lemon Milk Bold';
+            src: url('fonts/LEMONMILK-Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
+            background-color: #f5f5fF;
         }
 
-        .container {
+        .container {           
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
@@ -22,7 +30,7 @@
         }
 
         header {
-            background-color: #edf2ff;
+            background-color: #e9efff;
             padding: 20px 0;
         }
 
@@ -35,22 +43,12 @@
         .logo {
             width: 125px;
             height: 125px;
-        }
-
-        .title-slogan {
-            flex-grow: 1;
-        }
+        }       
 
         .name {
             font-size: 4.5em;
             color: #1f3e87;
             margin: 0;
-        }
-
-        .slogan {
-            font-size: 1em;
-            color: #555;
-            margin: 5px 0 0 0;
         }
 
         .logo-placeholder {
@@ -75,7 +73,7 @@
         .carousel-item {
             flex: 0 0 calc(33.333% - 20px);
             margin: 0 10px;
-            background-color: #f9f9f9;
+            background-color: #EDEDF5;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -137,17 +135,41 @@
 
         .slogan {
             text-align: center;
-            font-size: 20px;
-            font-weight: bold;           
-            font-family: 'Arial Black';            
-            color: #2b395a;            
-            margin-top: 10px;           
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Lemon Milk Bold', sans-serif;
+            color: #2b395a;
+            margin-top: 50px;
         }
 
         @media (max-width: 768px) {
             .carousel-item {
                 flex: 0 0 calc(100% - 20px);
             }
+        }
+
+        .container-img-ambiente {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .fade-in {
+            opacity: 1;
         }
     </style>
 </head>
@@ -170,15 +192,15 @@
 
             </div>
 
-            <p class="slogan">Conhecimento é Segurança, Segurança é Sucesso</p>
-
         </div>
 
     </header>
 
+    <p class="slogan">Conhecimento é Segurança, Segurança é Sucesso</p>
+
     <main class="container">
 
-        <h1>Bem vindo</h1>
+        <h1>Bem Vindo</h1>
         <p>Transformamos a segurança industrial através da inteligência artificial. Nossa plataforma inovadora oferece
             informações cruciais em tempo real sobre o maquinário da sua empresa, permitindo operações mais seguras e
             eficientes.</p>
@@ -223,6 +245,14 @@
 
         <br>
 
+        <div class="container-img-ambiente">
+            <div class="image-gallery">
+                <img src="imagens/ambiente1.jpg" alt="Ambiente 1">
+                <img src="imagens/ambiente2.jpg" alt="Ambiente 2">
+                <img src="imagens/ambiente3.jpg" alt="Ambiente 3">
+            </div>
+        </div>
+
 
         <h1>Sobre a Worker AI</h1>
 
@@ -259,36 +289,31 @@
             <div class="carousel-container">
 
                 <div class="carousel-item">
-                    <img src="imagens/cliente1.jpg" alt="Cliente 1" class="user-image">
-                    <p class="user-comment">"Yo soy inevitable!"</p>
-                    <p class="user-name">- Thanos Mexicano</p>
+                    <img src="imagens/cliente5.jpg" alt="Cliente 1" class="user-image">
+                    <p class="user-comment">"A solução de IA da AF Software transformou nossa gestão de equipamentos. É
+                        intuitiva e melhorou drasticamente nossa conformidade com a segurança!"</p>
+                    <p class="user-name">- João S., Gerente de Operações</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/cliente6.jpg" alt="Cliente 2" class="user-image">
+                    <p class="user-comment">"Finalmente aprendCom o software deles, agora temos todas as informações
+                        críticas ao nosso alcance. A manutenção nunca foi tão eficiente."</p>
+                    <p class="user-name">- Rafael A., Engenheiro Industria</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/cliente7.jpg" alt="Cliente 2" class="user-image">
+                    <p class="user-comment">"Confiável, fácil de usar e extremamente eficaz. A AF Software nos ajudou a
+                        minimizar o tempo de inatividade e maximizar a produtividade!"</p>
+                    <p class="user-name">- Mariana L., Supervisora de Planta</p>
                 </div>
 
                 <div class="carousel-item">
                     <img src="imagens/cliente2.jpg" alt="Cliente 2" class="user-image">
-                    <p class="user-comment">"Finalmente aprendi a verificar uma uva!"</p>
+                    <p class="user-comment">"Finalmente aprendi a manusear uma uva!"</p>
                     <p class="user-name">- Lasier Martins</p>
                 </div>
-
-                <div class="carousel-item">
-                    <img src="imagens/cliente3.jpg" alt="Cliente 3" class="user-image">
-                    <p class="user-comment">"Ednaldo Pereira"</p>
-                    <p class="user-name">- Ednaldo Pereira</p>
-                </div>
-
-                <!--
-                <div class="carousel-item">
-                    <img src="/api/placeholder/80/80" alt="Cliente 4" class="user-image">
-                    <p class="user-comment">"Innovative solutions and great communication throughout the project. Highly skilled developer!"</p>
-                    <p class="user-name">- Sarah Lee, CTO</p>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="/api/placeholder/80/80" alt="Cliente 5" class="user-image">
-                    <p class="user-comment">"Transformed our idea into a fully functional app. Extremely satisfied with the results!"</p>
-                    <p class="user-name">- David Brown, Entrepreneur</p>
-                </div>
-                -->
 
             </div>
 
@@ -311,6 +336,20 @@
     </footer>
 
     <script>
+        //
+        function handleScroll() {
+            const gallery = document.querySelector('.image-gallery');
+            const galleryPosition = gallery.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (galleryPosition < screenPosition) {
+                gallery.classList.add('fade-in');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        // carousel
         let currentSlide = 0;
         const container = document.querySelector('.carousel-container');
         const items = document.querySelectorAll('.carousel-item');
