@@ -5,173 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worker AI</title>
-    <style>
-        @font-face {
-            font-family: 'Lemon Milk Bold';
-            src: url('fonts/LEMONMILK-Bold.otf') format('opentype');
-            font-weight: bold;
-            font-style: normal;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5fF;
-        }
-
-        .container {           
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #e9efff;
-            padding: 20px 0;
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .logo {
-            width: 125px;
-            height: 125px;
-        }       
-
-        .name {
-            font-size: 4.5em;
-            color: #1f3e87;
-            margin: 0;
-        }
-
-        .logo-placeholder {
-            width: 150px;
-            height: 50px;
-            background-color: #fff;
-            margin: 0 auto;
-        }
-
-        .carousel {
-            position: relative;
-            width: 100%;
-            margin: 40px auto;
-            overflow: hidden;
-        }
-
-        .carousel-container {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .carousel-item {
-            flex: 0 0 calc(33.333% - 20px);
-            margin: 0 10px;
-            background-color: #EDEDF5;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .user-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 15px;
-            display: block;
-        }
-
-        .user-comment {
-            font-style: italic;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        .user-name {
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .carousel-control.prev {
-            left: 10px;
-        }
-
-        .carousel-control.next {
-            right: 10px;
-        }
-
-        footer {
-            background-color: #2b395a;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
-        .slogan-section {
-            background-color: #fff;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .slogan {
-            text-align: center;
-            font-size: 35px;
-            font-weight: bold;
-            font-family: 'Lemon Milk Bold', sans-serif;
-            color: #2b395a;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 768px) {
-            .carousel-item {
-                flex: 0 0 calc(100% - 20px);
-            }
-        }
-
-        .container-img-ambiente {
-            max-width: 1500px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .image-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .image-gallery img {
-            width: 300px;
-            height: 350px;
-            object-fit: cover;
-        }
-
-        .fade-in {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">  
 </head>
 
 <body>
@@ -253,6 +88,7 @@
             </div>
         </div>
 
+        <br>
 
         <h1>Sobre a Worker AI</h1>
 
@@ -281,6 +117,8 @@
 
         <p><strong>Junte-se a nós enquanto revolucionamos a forma como as indústrias abordam a segurança e a eficiência
                 operacional.</strong></p>
+
+        <br>
 
         <h1>Clientes</h1>
 
@@ -322,6 +160,28 @@
             <button class="carousel-control next" onclick="changeSlide(1)">❯</button>
 
         </div>
+        
+        <section class="quote-form">
+
+            <div class="container">
+                <h1>Solicite uma Visita</h1>
+                <p>Entre em contato para obter mais informações sobre nossos serviços.</p>
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="fullName" placeholder="Nome Completo" required>
+                        <input type="tel" name="phoneNumber" placeholder="Telefone" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="emailAddress" placeholder="Email" required>
+                        <input type="text" name="subject" placeholder="Assunto" required>
+                    </div>
+                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                    <div class="form-footer">                        
+                        <button type="submit" class="submit-btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
     </main>
 
@@ -329,8 +189,21 @@
 
         <footer>
             <div class="container">
+
+                <p>Visite nossas redes sociais:</p>
+
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                   <!-- <a href="#" target="_blank"><i class="fas fa-envelope"></i></a> -->
+                </div>
+
                 <p>&copy; 2024 Worker AI. Todos os Direitos Reservados.</p>
+
             </div>
+
         </footer>
 
     </footer>
